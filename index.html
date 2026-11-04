@@ -42,11 +42,12 @@ summary{cursor:pointer;font-weight:700;color:var(--ikinci)}
 <textarea id="b1" readonly spellcheck="false">javascript:(function(){var u=&#x27;https://raw.githubusercontent.com/ruhattunc2176-tech/panel/main/tahlil.js&#x27;,c=&#x27;https://cdn.jsdelivr.net/gh/ruhattunc2176-tech/panel@main/tahlil.js&#x27;,t=Date.now();function yedek(){var s=document.createElement(&#x27;script&#x27;);s.src=c+&#x27;?v=&#x27;+t;s.onerror=function(){alert(&#x27;Tahlil Paneli: güncel kod indirilemedi. İnternet bağlantınızı kontrol edip tekrar deneyin.&#x27;);};(document.head||document.documentElement).appendChild(s);}try{fetch(u+&#x27;?v=&#x27;+t,{cache:&#x27;no-store&#x27;}).then(function(r){if(!r.ok)throw new Error(&#x27;http &#x27;+r.status);return r.text();}).then(function(k){try{(0,eval)(k);}catch(e){if(e&amp;&amp;e.name===&#x27;EvalError&#x27;){yedek();}else{throw e;}}},function(){yedek();});}catch(e){yedek();}})();</textarea>
 <div class="satir"><button type="button" onclick="kopyala('b1',this)">Kodu kopyala</button><span class="durum"></span></div>
 <p class="not">Yer imleri çubuğunda sağ tık → <b>Sayfa ekle</b>; ad olarak "🧪 Tahlil Paneli" yazın, <b>URL</b> kutusuna bu kodu yapıştırın.</p>
-</details><details><summary>Tampermonkey ile otomatik açılsın (isteğe bağlı)</summary>
-<ol><li>Chrome'a Tampermonkey eklentisini kurun.</li>
-<li><a href="https://raw.githubusercontent.com/ruhattunc2176-tech/panel/main/tahlil-paneli.user.js">Bu bağlantıya</a> basın; açılan Tampermonkey sayfasında <b>Yükle</b> (Install) deyin.</li>
-<li>Tahliller sayfası açılınca panel kendiliğinden kurulur ve betik yeni sürümleri kendisi indirir.</li></ol>
-<p class="not">Tampermonkey kuruluysa Tahlil yer imine basmanız gerekmez.</p></details>
+</details><details><summary>Sayfa yenilenince de açık kalsın (Tampermonkey)</summary>
+<ol><li>Chrome Web Mağazası'ndan <b>Tampermonkey</b> eklentisini kurun.</li>
+<li>chrome://extensions sayfasında Tampermonkey → <b>Ayrıntılar</b> → <b>Kullanıcı komut dosyalarına izin ver</b> düğmesini açın.</li>
+<li><a href="https://raw.githubusercontent.com/ruhattunc2176-tech/panel/main/tahlil-otomatik.user.js">Bu bağlantıya</a> basın; açılan Tampermonkey sayfasında <b>Yükle</b> (Install) deyin.</li>
+<li>Artık Tahliller sayfası açılınca ya da yenilenince panel kendiliğinden kurulur; her açılışta en son sürümü indirir.</li></ol>
+<p class="not">Tampermonkey kurulamayan bilgisayarlarda yer imini kullanmaya devam edin.</p></details>
 </section>
 <section class="kart ilac">
 <div class="kbas"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#0d9488"/><g transform="rotate(-45 24 24)"><rect x="10" y="17" width="28" height="14" rx="7" fill="#fff"/><path d="M24 17h7a7 7 0 0 1 0 14h-7z" fill="#fb7185"/><path d="M24 17v14" stroke="#0d9488" stroke-width="1.6"/></g></svg><div><h2>Kullandığı İlaç Paneli</h2><div class="surum">İlaçlar sayfası</div></div></div>
