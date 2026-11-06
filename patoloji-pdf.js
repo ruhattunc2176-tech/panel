@@ -1,4 +1,4 @@
-/*! © 2026 Ruhat Tunç. Tüm hakları saklıdır. İzinsiz kopyalanamaz, değiştirilemez, dağıtılamaz. */
+/*! © 2026. Tüm hakları saklıdır. İzinsiz kopyalanamaz, değiştirilemez, dağıtılamaz. */
 (function(define,module,exports,require){
 /** @license
  *
