@@ -6,4 +6,4 @@ Bu depodaki kodlar Ruhat Tunç'a aittir. Yazılı izin olmadan kopyalanamaz, de�
 
 Bu depo yalnızca yazarın kendi yer imlerinin güncel kodu indirebilmesi için açıktır. Kodlar hasta verisi içermez ve hiçbir veriyi dışarı göndermez.
 
-Tahlil Paneli sürümü: 1.4.15
+Tahlil Paneli sürümü: 1.4.16
