@@ -1,0 +1,17 @@
+name: jsDelivr önbelleğini temizle
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  temizle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Panel dosyalarının jsDelivr önbelleğini temizle
+        run: |
+          for f in surum.json tahlil.js ilac.js rapor.js epikriz.js patoloji.js patoloji-pdf.js baslaticilar.json tahlil-paneli.user.js tahlil-otomatik.user.js; do
+            for i in 1 2 3; do
+              if curl -fsS -m 30 "https://purge.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/$f" -o /dev/null; then echo "temizlendi: $f"; break; fi
+              sleep 5
+            done
+          done
